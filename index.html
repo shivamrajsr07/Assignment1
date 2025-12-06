@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shivam Raj — Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">Shivam Raj</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="#contact" class="contact-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Hello — I'm <span class="accent">Shivam</span></h1>
+        <p class="lead">Full-stack developer building simple, reliable web applications. Open to roles in Bengaluru.</p>
+
+        <div class="ctas">
+          <a class="btn primary" href="resume.html">View Resume</a>
+          <a class="btn outline" href="projects.html">See Projects</a>
+        </div>
+
+        <ul class="meta">
+          <li>Location: Bengaluru, India</li>
+          <li>Open to: Full-time, Internships</li>
+        </ul>
+      </div>
+
+      <aside class="hero-right">
+        <div class="photo-wrap">
+          <img id="profilePhoto" src="assets/images/profile.jpg" alt="Profile photo">
+        </div>
+        <label class="upload-label">Replace Photo
+          <input id="uploadPhotoInput" type="file" accept="image/*" hidden>
+        </label>
+      </aside>
+    </section>
+
+    <section class="skills container">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span>Java</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>SQL</span>
+        <span>Git</span>
+      </div>
+    </section>
+
+    <section class="projects-preview container">
+      <h2>Selected Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Route Optimiser</h3>
+          <p>Optimized route planning algorithm for ride-sharing using heuristics and constraint handling.</p>
+          <a class="link" href="projects.html">View project</a>
+        </article>
+
+        <article class="card">
+          <h3>Portfolio Site</h3>
+          <p>Modern, responsive portfolio built with clean UI and accessible layout.</p>
+          <a class="link" href="projects.html">View project</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="row">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+        </div>
+        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send</button>
+          <button class="btn outline" type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Shivam Raj</div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a> · <a href="resume.html">Resume</a> · <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
